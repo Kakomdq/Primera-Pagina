@@ -1,0 +1,525 @@
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        /** esto es igual a su valor x 100 en px **/
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2;
+    }
+    /** Global**/
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .Contenedor {
+        width: 95%;
+        max-width: 160rem;
+        margin: 0 auto
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.6rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+    }
+    
+    h4 {
+        font-size: 2.6rem;
+    }
+    
+    p {
+        font-size: 1.4rem;
+    }
+    /** Utilidades **/
+    
+    .Seccion {
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .Font {
+        font-family: 'Yellowtail', cursive;
+        color: rgba(25, 42, 27, .75);
+        font-weight: .2rem;
+    }
+    
+    .Titulo-Anuncio {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    .Centrar-Texto {
+        text-align: center;
+    }
+    
+    .d-block {
+        display: block!important;
+    }
+    
+    .Contenido-Centrado {
+        max-width: 100rem;
+    }
+    /* Botones */
+    
+    .Boton {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        margin-top: 3rem;
+        display: inline-block;
+        border: none;
+        display: block;
+        flex: 0 0 100%;
+    }
+    
+    @media (min-width: 768px) {
+        .Boton {
+            display: inline-block;
+            flex: 0 0 auto;
+        }
+    }
+    
+    .Boton:hover {
+        cursor: pointer;
+    }
+    
+    .Boton-Amarillo {
+        background-color: #e08709;
+        padding-bottom: 2rem;
+    }
+    
+    .Boton-Verde {
+        background-color: #71b100;
+    }
+    /* header */
+    
+    .site-header {
+        background-color: #333333;
+        padding: 1rem 0 3rem 0;
+    }
+    
+    .site-header.inicio {
+        background: url(../img/header.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        min-height: 65rem;
+    }
+    
+    .Header {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        .Header {
+            text-align: left;
+        }
+    }
+    
+    .Header h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+        padding-bottom: 3.5rem;
+        max-width: 45rem;
+        line-height: 2;
+    }
+    
+    .Barra {
+        padding-top: 3.5rem;
+    }
+    
+    @media (min-width: 768px) {
+        .Barra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    /** Navegacion **/
+    
+    .Navegadores a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 2rem;
+        display: block;
+    }
+    
+    @media (min-width: 768px) {
+        .Navegadores a {
+            display: inline-block;
+            margin-right: 1.5rem;
+        }
+        .Navegadores a:last-of-type {
+            margin: 0;
+        }
+    }
+    
+    .Navegadores a:hover {
+        color: #59DBD5;
+    }
+    /** Menu Mobil **/
+    
+    .menu-mobile img {
+        width: 5rem;
+    }
+    
+    @media (min-width: 768px) {
+        .menu-mobile img {
+            display: none;
+        }
+    }
+    
+    .Navegadores:target {
+        display: block;
+    }
+    
+    .Navegadores {
+        display: none;
+    }
+    
+    @media (min-width: 768px) {
+        .Navegadores {
+            display: block;
+        }
+    }
+    /** Iconos Nosotros **/
+    
+    @media (min-width: 768px) {
+        .Iconos-Nosotros {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .Iconos-Hijos {
+        text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        .Iconos-Hijos {
+            flex-basis: calc(33.3% - 1rem);
+        }
+    }
+    
+    .Iconos-Hijos h3 {
+        text-transform: uppercase;
+    }
+    /** Anuncions **/
+    
+    @media (min-width: 768px) {
+        .Contenedor-Anuncios {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    
+    .Anuncios {
+        border: 0.1rem solid #949491;
+        background-color: #eeeeee;
+        margin-bottom: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+        .Anuncios {
+            flex: 0 0 calc(33.3% - 1rem);
+        }
+    }
+    
+    .Contenido-Anuncios h3 {
+        font-size: 2.8rem;
+        line-height: 1;
+        font-weight: 700;
+    }
+    
+    .Contenido-Anuncios p {
+        line-height: 2;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .Contenido-Anuncios {
+        padding: 2rem;
+    }
+    
+    .Contenido-Anuncios h3,
+    .Contenido-Anuncios p {
+        margin: 0;
+    }
+    
+    .Precio {
+        font-weight: 400;
+        color: #14B76E;
+    }
+    
+    .Listas-Iconos {
+        list-style: none;
+        padding: 0em;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 50rem;
+        flex: 1;
+    }
+    
+    .Listas-Iconos li {
+        display: flex;
+    }
+    
+    .Listas-Iconos li img {
+        margin-right: 2rem;
+    }
+    
+    .Ver-Todas {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /** Formulario **/
+    
+    .Formulario {
+        background: url(../img/encuentra.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .Contenido-Contacto {
+        flex: 0 0 95%;
+        color: #ffffff;
+    }
+    
+    .Contenido-Contacto h2 {
+        font-size: 3rem;
+    }
+    
+    .Contacto {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .Testimoniales {
+        margin-bottom: 1.5rem;
+    }
+    /** Blog y Testimoniales **/
+    
+    @media (min-width: 768px) {
+        .Blog {
+            display: flex;
+            justify-content: space-between;
+        }
+        .Blog .Nuestro-Blog {
+            flex-basis: 60%;
+        }
+        .Blog .Testimoniales {
+            flex-basis: calc(40% - 2rem);
+        }
+    }
+    
+    .Entrada-Blog {
+        margin-bottom: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+        .Entrada-Blog {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .Entrada-Blog :last-of-type {
+        margin-bottom: 0em;
+    }
+    
+    @media (min-width: 768PX) {
+        .Entrada-Blog .Imagen-Blog {
+            flex-basis: 40%;
+        }
+        .Entrada-Blog .Texto-Blog {
+            flex-basis: calc(60% - 3rem);
+        }
+    }
+    
+    .Texto-Blog h4 {
+        margin: 0em;
+        line-height: 1.2;
+    }
+    
+    .Texto-Blog a {
+        display: flex;
+        color: #000000;
+        text-decoration: none;
+        text-align: start;
+    }
+    
+    .Texto-Blog h4::after {
+        content: "";
+        display: block;
+        width: 20rem;
+        height: .4rem;
+        background-color: palegreen;
+        margin-top: 1rem;
+    }
+    
+    .Texto-Blog Spam {
+        color: #7740ff;
+    }
+    /** Testimonio **/
+    
+    .Testimonio {
+        background-color: #14B76E;
+        font-size: 2.2rem;
+        padding: 2.2rem;
+        color: #f5f5f1;
+        border-radius: 3rem;
+    }
+    
+    .Testimonio p {
+        text-align: right;
+    }
+    
+    .Testimonio blockquote::before {
+        content: "";
+        background: url(../img/comilla.svg);
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        left: -2rem;
+    }
+    
+    .Testimonio blockquote {
+        position: relative;
+        padding-left: 5rem;
+        font-weight: 300;
+    }
+    /** Footer **/
+    
+    .Footer {
+        background-color: #333333;
+        margin: 0em;
+    }
+    
+    .Contenedor-Footer {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    @media (min-width: 768PX) {
+        .Contenedor-Footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .Footer nav {
+        display: none;
+    }
+    
+    @media (min-width: 768px) {
+        .Footer nav {
+            display: block;
+        }
+    }
+    
+    .Copy {
+        margin: 0em;
+        color: #59DBD5;
+    }
+    /** Enlaces **/
+    /** Nosotros **/
+    
+    @media (min-width: 768px) {
+        .Contenido-Nosotros {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 2.5rem;
+        }
+    }
+    
+    .Texto-Nosotros blockquote {
+        font-weight: 900;
+        font-size: 3.5rem;
+        margin: 0em;
+        padding: 3rem 0;
+    }
+    /** Propiedad **/
+    
+    .detalle {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3rem;
+    }
+    /** Contacto **/
+    
+    form p {
+        font-size: 1rem;
+        color: #949491;
+        margin: 2rem 0 0 0;
+    }
+    
+    legend {
+        font-size: 2.8rem;
+        color: #444444;
+    }
+    
+    label {
+        font-weight: 7000;
+        text-transform: uppercase;
+        display: block;
+    }
+    
+    input:not([type="submit"]),
+    textarea,
+    select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: #e1e1e1;
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 1rem;
+    }
+    
+    select {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+    textarea {
+        height: 20rem;
+    }
+    
+    input[type="radio"] {
+        width: auto;
+        margin: 0em;
+    }
+    
+    .forma-contacto {
+        max-width: 30rem;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
